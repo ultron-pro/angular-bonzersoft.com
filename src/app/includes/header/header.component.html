@@ -1,0 +1,105 @@
+
+        <div class="nav-header">
+            <!-- Nav bar tag started.................................................... -->
+            
+            <nav style="background:#f2ffe6; "class="navbar navbar-expand-lg  nav justify-content-end top-fixed">
+                <!-- .................................................. -->
+                
+                   
+                <div class="navbar-collapse collapse w-100 order-2 order-md-0 dual-collapse2">
+                    
+                    <ul class="navbar-nav mr-auto d-flex flex-row bd-highlight mb-3">
+                    <li class="log p-2 bd-highlight" href="#">
+                        <img src="assets/image/Bonzersoft-logos_black.png" alt="" height="50px">
+                    </li>
+                </ul>
+                </div>
+                
+                <div class="navbar-collapse collapse w-100 order-4 dual-collapse2 justify-content-end">
+                <ul class="nav justify-content-end">
+                    <!-- home link li start...................... -->
+                    
+
+                    <li class="nav-item">
+                      <a class="nav-link  active" aria-current="page" href="#">Active</a>
+                    </li>
+                    <!-- home linke li end........................................... -->
+                     <!-- contact link li start...................... -->
+                    <li class="nav-item">
+                      <a class="nav-link " href="#">Link</a>
+                    </li>
+                    <!-- home link li end........................................... -->
+                     <!-- about link li start...................... -->
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+
+                    <!-- home link li end........................................... -->
+
+                     <!-- side button toggle  link li start...................... -->
+                    <li class="nav-item">
+                      <a class="nav-link ">
+                   <!-- start toggle side bar  div.................................................................... -->
+                    <div class="side-toggle-b">
+                        <ng-template #content let-offcanvas>
+                            <div class="offcanvas-header">
+                                <h4 class="offcanvas-title">Start Up</h4>
+                                <button type="button" class="btn-close" aria-label="Close" (click)="offcanvas.dismiss('Cross click')"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <p>One fine body&hellip;</p>
+                                <li class="nav-item">
+                                     <!-- .............................................. -->
+                                    <div ngbDropdown class="d-inline-block">
+                                       
+                                        <button type="button" class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
+                                            Toggle dropdown
+                                            
+                                        </button>
+                                        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                                            <button ngbDropdownItem>Action - 1</button>
+                                            <button ngbDropdownItem>Another Action</button>
+                                            <button ngbDropdownItem>Something else is here</button>
+                                        </div>
+                                        </div>
+                                         <!-- .............................................. -->
+                                </li>
+                                <div class="text-end">
+                                    <button type="button" class="btn btn-outline-dark" (click)="offcanvas.close('Close click')">Close
+                        
+                                    </button>
+                                </div>
+                            </div>
+                        </ng-template>
+                        
+                        <button class="btn btn-sm btn-outline-primary" (click)="open(content)">start</button>
+
+
+                    </div>
+                    <!-- end button div toggle side bar.............................................................. -->
+                      </a>
+                      <!-- end <a> tag............................................................................... -->
+                    </li>
+
+                    <!-- end  of li ...................................................................... -->
+                  </ul>
+                  <!-- nav unorder list end................................................................ -->
+                </div>
+            </nav>
+           <!-- end  Nav Header....................................................................... -->
+        
+        </div>
+        <!-- end nav div ..................................................................................-->
+           
+<div class="container">
+
+
+
+    
+</div>                        
+       
+
+
+
+
+

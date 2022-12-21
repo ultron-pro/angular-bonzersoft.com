@@ -1,7 +1,29 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AboutComponent } from './components/about/about.component';
+import { AdminDashboardComponent } from './components/admin-dashboard/admin-dashboard.component';
+import { HomeComponent } from './components/home/home.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { ServicesComponent } from './components/services/services.component';
+import { StartLoginComponent } from './components/start-login/start-login.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+ 
+  {path: '',
+  component: AdminDashboardComponent,
+  children:[
+  {path: '', redirectTo:'/home', pathMatch:'full'},
+  {path: 'home',component:HomeComponent },
+  {path: 'about' ,component: AboutComponent},
+  {path: 'services' , component: ServicesComponent},
+  {path: 'login', component:StartLoginComponent},
+  {path: '**', component: PageNotFoundComponent}
+
+  ],
+},
+  
+ 
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

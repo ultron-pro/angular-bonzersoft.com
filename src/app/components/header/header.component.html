@@ -1,0 +1,85 @@
+<div class="navdiv">
+<nav class="navbar navbar-expand-lg navbar-dark  nav justify-content-end">
+  <div class="container">
+      <a class="navbar-brand" href="#">Admin Header</a>
+       <button class="navbar-toggler" (click)="open(content)" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+          aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+
+            
+
+          <span class="navbar-toggler-icon">
+           
+          </span>
+      </button> 
+      
+
+
+      <div class="collapse navbar-collapse nav justify-content-end" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item" routerLinkActive="active">
+                  <a class="nav-link" routerLink="./home">Home
+                      <span class="sr-only"></span>
+                  </a>
+              </li>
+              <li class="nav-item" routerLinkActive="active">
+                  <a class="nav-link" routerLink="./about">About</a>
+              </li>
+              <li class="nav-item" routerLinkActive="active">
+                  <a class="nav-link" routerLink="./services">Services</a>
+              </li>
+              <li class="nav-item" routerLinkActive="active">
+                  <a class="nav-link" routerLink="./contact">Contact</a>
+              </li>
+              <li class=" btn-primary nav-item text-white" role="button">
+                  <a class="nav-link text-white">
+                    <div class="side-toggle-b">
+                        <ng-template #content let-offcanvas>
+                            <div class="offcanvas-header">
+                                <h4 class="offcanvas-title">Start Up</h4>
+                                <button type="button" class="btn-close" aria-label="Close" (click)="offcanvas.dismiss('Cross click')"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <p>One fine body&hellip;</p>
+                                <li class="nav-item">
+                                     <!-- .............................................. -->
+                                    <div ngbDropdown class="d-inline-block">
+                                       
+                                        <button type="button" class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
+                                            Toggle dropdown
+                                            
+                                        </button>
+                                        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                                            <button ngbDropdownItem> <a class="nav-link" routerLink="./home">Home
+                                                <span class="sr-only"></span>
+                                            </a></button>
+                                            <button ngbDropdownItem> <a class="nav-link" routerLink="./about">About</a></button>
+                                            
+                                            <button ngbDropdownItem><a class="nav-link" routerLink="./services">Services</a></button>
+                                            <button ngbDropdownItem><a class="nav-link" routerLink="./contact">Contact</a></button>
+                                           
+
+                                        </div>
+                                        </div>
+                                         <!-- .............................................. -->
+                                </li>
+                                <div class="text-end">
+                                    <button type="button" class="btn btn-outline-dark" (click)="offcanvas.close('Close click')">Close
+                        
+                                    </button>
+                                </div>
+                            </div>
+                        </ng-template>
+                        
+                        <button class="btn btn-sm btn-outline-primary" (click)="open(content)">start</button>
+
+
+                    </div>
+
+                    
+                  </a>
+              </li> 
+          </ul>
+      </div>
+  </div>
+</nav>
+</div>

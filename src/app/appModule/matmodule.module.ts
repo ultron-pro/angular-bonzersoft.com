@@ -8,11 +8,11 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatSidenavModule} from '@angular/material/sidenav'; 
 import { NgbDropdown, NgbDropdownMenu } from '@ng-bootstrap/ng-bootstrap';
 import { NgbOffcanvasConfig, NgbOffcanvas } from '@ng-bootstrap/ng-bootstrap';
+import { NgbCarousel } from '@ng-bootstrap/ng-bootstrap';
 
-        
 const material =[
 
-   MatToolbarModule,
+    MatToolbarModule,
     MatCardModule,
     MatIconModule,
     MatButtonModule,
@@ -20,9 +20,7 @@ const material =[
     MatSidenavModule,
     NgbDropdown,
     NgbDropdownMenu,
-    
-    
-   
+    NgbCarousel,
     
 ]
 @NgModule({
@@ -30,13 +28,15 @@ const material =[
  
   imports: [
     CommonModule,
-    material
+    material,
+  
     
   ],
 
   exports:[
 
     material
+  
   ]
 })
 export class MatmoduleModule { }

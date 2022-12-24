@@ -1,9 +1,11 @@
 
 import { ContentObserver } from '@angular/cdk/observers';
-import { Component } from '@angular/core';
+import { Component,HostListener } from '@angular/core';
 import { NgbDropdownModule, NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbDropdown } from '@ng-bootstrap/ng-bootstrap';
 import { NgbOffcanvasConfig, NgbOffcanvas } from '@ng-bootstrap/ng-bootstrap';
+import {faCircleDown, } from '@fortawesome/free-regular-svg-icons';
+
 @Component({
   selector: 'app-header',
   
@@ -13,6 +15,19 @@ import { NgbOffcanvasConfig, NgbOffcanvas } from '@ng-bootstrap/ng-bootstrap';
 
 })
 export class HeaderComponent {
+
+	isSticky: boolean = false;
+
+	@HostListener('window:scroll', ['$event'])
+	checkScroll() {
+	  this.isSticky = window.pageYOffset >= 250;
+	}
+
+
+	// font icon
+	faCircleDown=faCircleDown;
+	  
+	//end font icon
 	navbarCollapsed = true
 
   constructor(config: NgbOffcanvasConfig, private offcanvasService: NgbOffcanvas) {

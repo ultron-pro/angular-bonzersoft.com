@@ -1,15 +1,16 @@
-<div class="navdiv">
-<nav class="navbar navbar-expand-lg navbar-dark  nav justify-content-end">
+<div class="navdiv" id="myHeader">
+<nav class="navbar navbar-expand-lg navbar-dark  nav justify-content-end" >
   <div class="container">
       <a class="navbar-brand" href="#">Admin Header</a>
+     
+
        <button class="navbar-toggler" (click)="open(content)" type="button" data-toggle="collapse" data-target="#navbarResponsive"
           aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 
-            
-
-          <span class="navbar-toggler-icon">
+          
+           <span class="navbar-toggler-icon">
            
-          </span>
+          </span> 
       </button> 
       
 
@@ -22,6 +23,9 @@
                   </a>
               </li>
               <li class="nav-item" routerLinkActive="active">
+                <i class="fa-light fa-house"></i>
+
+
                   <a class="nav-link" routerLink="./about">About</a>
               </li>
               <li class="nav-item" routerLinkActive="active">
@@ -70,7 +74,11 @@
                             </div>
                         </ng-template>
                         
-                        <button class="btn btn-sm btn-outline-primary" (click)="open(content)">start</button>
+                        <button class="btn btn-sm btn-outline-primary" (click)="open(content)">
+                            <fa-icon [icon]="faCircleDown"></fa-icon>    
+                            start
+                        </button>
+                        
 
 
                     </div>
@@ -83,3 +91,5 @@
   </div>
 </nav>
 </div>
+
+

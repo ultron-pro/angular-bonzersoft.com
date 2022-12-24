@@ -6,7 +6,7 @@ import { HomeComponent } from './components/home/home.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { ServicesComponent } from './components/services/services.component';
 import { StartLoginComponent } from './components/start-login/start-login.component';
-
+import {ContactComponent} from './components/contact/contact.component'
 const routes: Routes = [
  
   {path: '',
@@ -16,7 +16,9 @@ const routes: Routes = [
   {path: 'home',component:HomeComponent },
   {path: 'about' ,component: AboutComponent},
   {path: 'services' , component: ServicesComponent},
+  {path: 'contact', component:ContactComponent},
   {path: 'login', component:StartLoginComponent},
+  
   {path: '**', component: PageNotFoundComponent}
 
   ],

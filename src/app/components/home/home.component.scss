@@ -1,54 +1,12 @@
-.wrapp-001{
-    
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-        width: 100%;
-        background:#f5f4f7;
-        position: relative;
-        min-height: 100vh;
-        display: flex;
-        justify-content: center;
-    
+.outerdiv
+{
+  background-color: rgba(255,0,0,0.1);
+
 }
 .container{
 
-  align-content: center;
-  display: flex;
-  height: inherit;
- justify-content: space-around;
- background:#fff;
+ 
+ background:rgb(247, 244, 244);
 }
 
-.card
-{
-  
-  background: rgb(237, 238, 240);
-  width: 100%;
-  display: flex;
-  align-self: center;
-  padding-right: 100px;
-  padding-left: 100px;
-  transition: 0.10s;
-  border: #04010b;
 
-   
-  
-}
-.silder-container
-{
-  
-  //  width:auto;
-  //  padding: 40px 0;
-  // position: absolute;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  border-radius: 10%;
-  
-   //background-color: rgba(165, 25, 25, 0.6);
-  // color: #fff;
-
-}
-.form-check
-{
-  display: none;
-}

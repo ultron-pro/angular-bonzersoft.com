@@ -9,9 +9,12 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import { NgbDropdown, NgbDropdownMenu } from '@ng-bootstrap/ng-bootstrap';
 import { NgbOffcanvasConfig, NgbOffcanvas } from '@ng-bootstrap/ng-bootstrap';
 import { NgbCarousel } from '@ng-bootstrap/ng-bootstrap';
+import {} from '@angular/material/card';
+
+
 
 const material =[
-
+  
     MatToolbarModule,
     MatCardModule,
     MatIconModule,

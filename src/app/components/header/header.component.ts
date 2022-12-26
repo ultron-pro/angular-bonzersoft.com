@@ -4,7 +4,8 @@ import { Component,HostListener } from '@angular/core';
 import { NgbDropdownModule, NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbDropdown } from '@ng-bootstrap/ng-bootstrap';
 import { NgbOffcanvasConfig, NgbOffcanvas } from '@ng-bootstrap/ng-bootstrap';
-import {faCircleDown, } from '@fortawesome/free-regular-svg-icons';
+import {faCircleDown} from '@fortawesome/free-regular-svg-icons';
+import {faHome,faContactCard,faSearch,faAddressCard} from '@fortawesome/free-solid-svg-icons'
 
 @Component({
   selector: 'app-header',
@@ -26,6 +27,9 @@ export class HeaderComponent {
 
 	// font icon
 	faCircleDown=faCircleDown;
+	faHome=faHome;
+	faContactCard=faContactCard;
+	faSearch=faSearch;
 	  
 	//end font icon
 	navbarCollapsed = true

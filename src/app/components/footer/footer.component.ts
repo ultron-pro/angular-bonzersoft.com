@@ -7,13 +7,15 @@ import {faYoutube,faFacebook,faTwitter,faGithub,faInstagram} from '@fortawesome/
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit{
-
+          //font icon start...
        faYoutbue =faYoutube;
        faFacebook=faFacebook;
        faTwitter=faTwitter;
        faGithub=faGithub;
        faInstagram=faInstagram;
-  ngOnInit(): void {
+   //font icon end....
+
+       ngOnInit(): void {
       
   }
 }

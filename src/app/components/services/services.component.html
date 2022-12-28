@@ -6,6 +6,15 @@
        <div class="row">
         <div class="col-md-4">
           <!-- first col -->
+          <!-- start ripple -->
+          <div class="tp"
+             [(ngModel)] = "color" type = "text" 
+             [(ngModel)] = "radius" type = "number" 
+             matRipple
+             [matRippleCentered]="centered"
+             [matRippleRadius]="radius"
+             [matRippleColor]="color" >
+          
           <div class="card">
             <div class="card-body">
               <i class="fa fa-bar-chart" style="font-size:36px" myicon></i>
@@ -21,10 +30,21 @@
 
              </div>
           </div>
+        </div>
+        <!-- end ripple -->
            <!-- first end col -->
         </div>
         <div class="col-md-4">
           <!-- second col -->
+          <!-- start ripple -->
+          <div class="tp"
+             [(ngModel)] = "color" type = "text" 
+             [(ngModel)] = "radius" type = "number" 
+             matRipple
+             [matRippleCentered]="centered"
+             [matRippleRadius]="radius"
+             [matRippleColor]="color" >
+         
           <div class="card">
             <div class="card-body">
               <i class="fa fa-pie-chart" style="font-size:48px;color:rgb(197, 148, 148)" myicon></i>
@@ -41,26 +61,40 @@
              </div>
 
           </div>
+        </div>
+        <!-- end ripple -->
           <!-- second end col -->
         </div>
         <div class="col-md-4">
           <!-- start third col -->
-          <div class="card">
-            <div class="card-body">
-            
-              <i class="fa fa-line-chart" style="font-size:36px" myicon ></i>
-              <h3>best ex</h3>
-              <p>Lorem ipsum dolor, 
-              sit amet consectetur adipisicing elit. 
-              Dignissimos perferendis eius quibusdam
-               non commodi. Minima maiores maxime ab, 
-               eius aut earum animi distinctio ut 
-               officiis. Quos odio aspernatur similique 
-               autem?
-              </p>
-
-             </div>
-          </div>
+            <!-- ripple start -->
+          <div class="tp"
+             [(ngModel)] = "color" type = "text" 
+             [(ngModel)] = "radius" type = "number" 
+             matRipple
+             [matRippleCentered]="centered"
+             [matRippleRadius]="radius"
+             [matRippleColor]="color" >
+             <div class="card">
+              <div class="card-body">
+              
+                <i class="fa fa-line-chart" style="font-size:36px" myicon ></i>
+                <h3>best ex</h3>
+                <p>Lorem ipsum dolor, 
+                sit amet consectetur adipisicing elit. 
+                Dignissimos perferendis eius quibusdam
+                 non commodi. Minima maiores maxime ab, 
+                 eius aut earum animi distinctio ut 
+                 officiis. Quos odio aspernatur similique 
+                 autem?
+                </p>
+  
+               </div>
+               
+            </div>
+        </div>
+        <!-- end ripple start -->
+          
          <!-- third end col -->
         </div>
 
@@ -71,4 +105,13 @@
 
 
   </section>
+
   <!-- end services section -->
+  <div class="container text-center py-5">
+    <div class="row">
+      <div class="col-md-6">
+             <h1>hello</h1>
+      </div>
+      </div>
+  </div>
+ 

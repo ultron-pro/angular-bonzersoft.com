@@ -15,10 +15,9 @@ import {MatStepperModule} from '@angular/material/stepper';
 import { ReactiveFormsModule} from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormField, MatFormFieldModule } from "@angular/material/form-field";
-
-
-
-
+import {MatRippleModule} from '@angular/material/core';
+import {MatListModule} from '@angular/material/list';
+import {MatChipsModule} from '@angular/material/chips';
 
 
 
@@ -41,6 +40,11 @@ const material =[
     MatProgressBarModule,
     NgbDropdownMenu,
     NgbCarousel,
+    MatRippleModule,
+    MatListModule,
+    MatChipsModule,
+    
+    
     
   
     

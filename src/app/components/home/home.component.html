@@ -1,4 +1,4 @@
-<div class="outerdiv  p-3 mw-100 " >
+<div class="outerdiv  p-3 mw-100 "   >
 <ngb-carousel *ngIf="images">
     <ng-template ngbSlide>
       <img [src]="images[0]" alt="Random first slide" class='carouselImage'>
@@ -23,6 +23,7 @@
     </ng-template>
   </ngb-carousel>
 </div>
+
 <ngb-accordion (panelChange)="beforeChange($event)">
 	<ngb-panel id="preventchange-1" title="Simple">
 		<ng-template ngbPanelContent>

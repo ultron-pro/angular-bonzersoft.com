@@ -1,11 +1,22 @@
 <div class="navdiv" id="myHeader">
-<nav class="navbar navbar-expand-lg navbar-dark  nav justify-content-end" >
+<nav class="navbar navbar-expand-lg navbar-dark   nav justify-content-end" >
   <div class="container">
     <div class="angular-logo">
-        <img class="img-responsive" src="/src/assets/image/Bonzersoft-logos_black.png" width="50px">
+        
+        <img class="img-responsive" src="/../../assets/image/Bonzersoft-logos_black.png" width="60px">
+        
     </div>
-    
-      <a class="navbar-brand" href="#">BonzerSoft</a>
+   
+      <a class="navbar-brand" href="#">
+        <mat-card-header>
+            <mat-card-title color="warn"> 
+                
+                        Bonzersoft
+            </mat-card-title>
+        </mat-card-header>
+        
+       
+      </a>
      
 
        <button class="navbar-toggler" (click)="open(content)" type="button" data-toggle="collapse" data-target="#navbarResponsive"
@@ -40,50 +51,85 @@
               </li>
               <li class=" btn-primary nav-item text-white" role="button">
                   <a class="nav-link text-white">
-                    <div class="side-toggle-b">
-                        <ng-template #content let-offcanvas>
-                            <div class="offcanvas-header">
-                                <h4 class="offcanvas-title">Start Up</h4>
+                    <div class="side-toggle-b " >
+                        <div class="container">
+
+
+                        
+                        <ng-template #content let-offcanvas >
+                            <div class="offcanvas-header" >
+                                <div class="angular-logo-2">
+                                    <img class="img-responsive" src="/../../assets/image/Bonzersoft-logos_black.png" width="60px">
+                                    
+                                </div>
+                                <h4 class="offcanvas-title" style="text-align: center; color: brown;"> welcome to Bonzersoft </h4>
                                 <button type="button" class="btn-close" aria-label="Close" (click)="offcanvas.dismiss('Cross click')"></button>
                             </div>
-                            <div class="offcanvas-body">
-                                <p>One fine body&hellip;</p>
-                                <li class="nav-item">
-                                     <!-- .............................................. -->
-                                    <div ngbDropdown class="d-inline-block">
-                                       
-                                        <button type="button" class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
-                                            Toggle dropdown
-                                            
-                                        </button>
-                                        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-                                            <a class="nav-link" routerLink="./home">Home
+                            <div class="offcanvas-body" style="background-color: rgb(63, 138, 204);">
+                                
+                                <!-- <li class="nav-item"> -->
+                                     
+                                     <!-- mat List start........... -->
+                                                             
+                                      <div class="container text-center">
+                                       <mat-list>
+                                        
+                                        <mat-chip-listbox class="mat-mdc-chip-set-stacked" aria-label="Fish selection">
+                                            <mat-divider></mat-divider>
+                                            <mat-chip-option color="warn">
+                                                <mat-list-item routerLink="./home">
+                                        
+                                                    Home
+                                                </mat-list-item>
                                                 
-                                            </a>
-                                            
-                                            <button ngbDropdownItem> <fa-icon [icon]="faHome"></fa-icon> </button>
-                                            <button ngbDropdownItem> <a class="nav-link" routerLink="./about">About</a>
+                                            </mat-chip-option>
+                                            <mat-divider></mat-divider>
+                                            <mat-chip-option>
+
+                                                <mat-list-item routerLink="./about">About US</mat-list-item>
+                                            </mat-chip-option>
+                                            <mat-divider></mat-divider>
+                                            <mat-chip-option>
+                                                <mat-list-item routerLink="./services">Services</mat-list-item>
+                                            </mat-chip-option>
+                                            <mat-divider></mat-divider>
+                                            <mat-chip-option color="accent" selected>
                                                 
-
-                                            </button>
+                                                <mat-list-item routerLink="./contact">Contact</mat-list-item>
+                                            </mat-chip-option>
                                             
-                                            
-                                            <button ngbDropdownItem><a class="nav-link" routerLink="./services">Services</a></button>
-                                            <button ngbDropdownItem><a class="nav-link" routerLink="./contact">Contact</a></button>
-                                           
+                                          </mat-chip-listbox>
+                                         
+                                         
+                                        </mat-list>
+                                        </div>
+                                        <!-- mat list end............... -->
+                                        <div class="sidenav.card-2 py-5">
+                                        <mat-card>
+                                            <mat-card-content>
 
+                                                <mat-chip-grid aria-label="Fish selection">
+                                                    <mat-chip-option>One fish</mat-chip-option>
+                                                    <mat-chip-option>Two fish</mat-chip-option>
+                                                    <mat-chip-option color="accent" selected>Accent fish</mat-chip-option>
+                                                    <mat-chip-option color="warn">Warn fish</mat-chip-option>
+                                                  </mat-chip-grid>
+                                            
+                                            </mat-card-content>
+                                          </mat-card>
                                         </div>
-                                        </div>
+                                        
                                          <!-- .............................................. -->
-                                </li>
-                                <div class="text-end">
-                                    <button type="button" class="btn btn-outline-dark" (click)="offcanvas.close('Close click')">Close
+                                <!-- </li> -->
+                                <div class="text-end py-2" style="position: absolute;">
+                                    <button type="button" class="btn btn-outline-primary" (click)="offcanvas.close('Close click')">Close
                         
                                     </button>
                                 </div>
                             </div>
                         </ng-template>
-                        
+                    </div>
+                        <!-- end div ng side toggle -->
                         <button class="btn btn-sm btn-outline-primary" (click)="open(content)">
                             <fa-icon [icon]="faCircleDown"></fa-icon>    
                             start

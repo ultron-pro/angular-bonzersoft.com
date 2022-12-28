@@ -46,5 +46,7 @@ export class HeaderComponent {
 		this.offcanvasService.open(content);
 		console.warn(content);
 	}
+
+	
 }
 
